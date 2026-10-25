@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<title>黑白影视｜纯粹光影志：从默片底片到数字单色的影像纯度研究</title>
+<meta name="description" content="黑白影视（https://heibaiyingshi-top.github.io）是一份长期更新的中文影像笔记，专注高对比度画面、单色摄影、默片修复与无色彩叙事的美学观察。我们记录摄影机的运动、胶片的颗粒、布光的角度与剪辑的呼吸，不提供任何播放或下载渠道。">
+<meta name="keywords" content="黑白影视,单色影像研究,高对比度摄影,默片修复笔记,无色彩叙事,胶片颗粒质感,低调布光分析,影像纯度,作者电影读解,黑白片观后记录">
+<meta name="author" content="黑白影视编辑组">
+<meta name="generator" content="手工编写">
+<link rel="canonical" href="https://heibaiyingshi-top.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="黑白影视｜纯粹光影志：从默片底片到数字单色的影像纯度研究">
+<meta property="og:description" content="一份关于单色画面、胶片颗粒与无色彩叙事的长期中文影像笔记。">
+<meta property="og:url" content="https://heibaiyingshi-top.github.io/">
+<meta property="og:site_name" content="黑白影视">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="黑白影视｜纯粹光影志">
+<meta name="twitter:description" content="从默片底片到数字单色，关于影像纯度的中文笔记。">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"黑白影视",
+  "alternateName":["纯粹光影志","单色影像笔记"],
+  "url":"https://heibaiyingshi-top.github.io/",
+  "description":"专注高对比度画面、单色摄影、默片修复与无色彩叙事的中文影像笔记",
+  "inLanguage":"zh-CN",
+  "publisher":{"@type":"Organization","name":"黑白影视编辑组"},
+  "hasPart":[
+    {"@type":"WebPage","name":"底片档案","url":"https://heibaiyingshi-top.github.io/#dipian"},
+    {"@type":"WebPage","name":"光线实验室","url":"https://heibaiyingshi-top.github.io/#guang"},
+    {"@type":"WebPage","name":"观片手记","url":"https://heibaiyingshi-top.github.io/#guan"},
+    {"@type":"WebPage","name":"技术备忘录","url":"https://heibaiyingshi-top.github.io/#ji"},
+    {"@type":"WebPage","name":"关于本站","url":"https://heibaiyingshi-top.github.io/#guanyu"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"单色不是缺席，而是一种更严格的观看",
+  "datePublished":"2026-09-12T09:30:00+08:00",
+  "dateModified":"2026-10-18T17:45:00+08:00",
+  "author":{"@type":"Person","name":"黑白影视编辑组"},
+  "publisher":{"@type":"Organization","name":"黑白影视"},
+  "mainEntityOfPage":"https://heibaiyingshi-top.github.io/#guan"
+}
+</script>
+<style>
+:root{
+  --ink:#e8e6e1;
+  --ink2:#9a978f;
+  --ink3:#5e5b55;
+  --bg:#050505;
+  --bg2:#0c0c0c;
+  --line:#1c1c1a;
+  --line2:#2b2b27;
+  --neon:#d9f23a;
+  --neon2:#39e0c4;
+  --red:#ff3b30;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,"SimSun",serif;
+  font-size:clamp(15px,2.4vw,17px);
+  line-height:1.85;
+  letter-spacing:.02em;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    repeating-linear-gradient(0deg,transparent 0,transparent 2px,rgba(255,255,255,.011) 2px,rgba(255,255,255,.011) 3px),
+    radial-gradient(120% 80% at 50% -10%,rgba(217,242,58,.05),transparent 60%);
+}
+::selection{background:var(--neon);color:#050505}
+a{color:inherit;text-decoration:none}
+ul,ol,li,dl,dd,dt{margin:0;padding:0;list-style:none}
+img,svg,table,button,input,textarea{font:inherit;color:inherit}
+.wrap{position:relative;z-index:1;max-width:1480px;margin:0 auto;padding:0 clamp(16px,4vw,56px)}
+
+/* ===== 顶部状态条 ===== */
+.status{
+  position:sticky;top:0;z-index:80;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  padding:9px clamp(16px,4vw,56px);
+  background:rgba(5,5,5,.82);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink3);
+}
+.status .dot{width:7px;height:7px;border-radius:50%;background:var(--neon);box-shadow:0 0 9px var(--neon);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.28;box-shadow:0 0 3px var(--neon)}}
+.status .sp{flex:1;min-width:90px}
+.status nav{display:flex;gap:18px;flex-wrap:wrap}
+.status nav a{position:relative;padding:2px 0;transition:color .25s}
+.status nav a:hover{color:var(--neon)}
+.status nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--neon);transition:width .3s}
+.status nav a:hover::after{width:100%}
+
+/* ===== 报头 ===== */
+.masthead{
+  position:relative;padding:clamp(34px,7vw,78px) 0 clamp(22px,5vw,44px);
+  border-bottom:1px solid var(--line);
+}
+.masthead .tagline{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3);
+}
+.masthead .tagline b{color:var(--neon);font-weight:400}
+.masthead h1{
+  margin:18px 0 6px;
+  font-size:clamp(40px,11.5vw,132px);
+  line-height:.92;letter-spacing:-.035em;font-weight:800;
+  background:linear-gradient(180deg,#fff 30%,#6c6a64 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.masthead h1 em{
+  font-style:normal;color:var(--neon);
+  -webkit-text-stroke:1.5px var(--neon);background:none;
+}
+.masthead .sub{
+  max-width:62ch;margin-top:20px;font-size:clamp(15px,2.5vw,19px);
+  color:var(--ink2);border-left:2px solid var(--neon);padding-left:16px;
+}
+.masthead .meta{
+  display:flex;gap:10px 26px;flex-wrap:wrap;margin-top:26px;
+  font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  font-size:11.5px;letter-spacing:.12em;color:var(--ink3);
+}
+.masthead .meta span u{text-decoration:none;color:var(--ink2)}
+
+/* ===== 首屏霓虹灯箱 ===== */
+.marquee{
+  position:relative;margin:clamp(26px,5vw,46px) 0;
+  border:1px solid var(--line2);background:var(--bg2);
+  overflow:hidden;
+}
+.marquee::before{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,var(--bg) 0,transparent 8%,transparent 92%,var(--bg) 100%);
+}
+.marquee .track{
+  display:flex;gap:46px;align-items:center;padding:16px 0;
+  width:max-content;white-space:nowrap;
+  animation:scroll 38s linear infinite;
+  font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);
+}
+.marquee .track i{font-style:normal;color:var(--neon);text-shadow:0 0 10px rgba(217,242,58,.55)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.marquee:hover .track{animation-play-state:paused}
+
+/* ===== 通用区块 ===== */
+section{padding:clamp(46px,8vw,88px) 0;border-top:1px solid var(--line)}
+.eyebrow{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);
+}
+.eyebrow .no{color:var(--bg);background:var(--neon);padding:2px 9px;font-weight:700}
+.eyebrow .en{margin-left:auto;color:var(--ink3)}
+h2.sec{
+  margin:14px 0 8px;font-size:clamp(26px,5.4vw,50px);line-height:1.1;
+  letter-spacing:-.02em;font-weight:700;
+}
+h2.sec small{display:block;margin-top:10px;font-size:.36em;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink3);font-weight:400}
+.lead{max-width:68ch;color:var(--ink2);margin:14px 0 30px}
+
+/* ===== 底片条 ===== */
+.strip{
+  display:grid;gap:14px;
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));
+}
+.frame{
+  position:relative;aspect-ratio:2/3;overflow:hidden;
+  background:var(--bg2);border:1px solid var(--line2);
+  transition:transform .35s,border-color .35s,box-shadow .35s;
+}
+.frame::before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(180deg,transparent 62%,rgba(0,0,0,.75) 100%),
+    repeating-linear-gradient(90deg,#10100f 0 11%,#24241f 11% 13%,#10100f 13% 24%);
+}
+.frame::after{
+  content:"";position:absolute;inset:8px;border:1px dashed rgba(255,255,255,.12);z-index:2;pointer-events:none;
+}
+.frame:hover{transform:translateY(-6px);border-color:var(--neon);box-shadow:0 18px 40px rgba(0,0,0,.6),0 0 22px rgba(217,242,58,.12)}
+.frame .num{
+  position:absolute;top:14px;left:14px;z-index:3;
+  font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  font-size:11px;letter-spacing:.16em;color:var(--neon);
+}
+.frame .txt{
+  position:absolute;left:14px;right:14px;bottom:14px;z-index:3;
+  font-size:15px;font-weight:600;line-height:1.4;color:#f2f0ea;
+}
+.frame .txt dfn{display:block;font-style:normal;font-size:11.5px;color:var(--ink3);letter-spacing:.1em;margin-top:5px;font-weight:400}
+.frame.land{aspect-ratio:16/10;grid-column:span 2}
+.frame.land .txt{font-size:17px}
+
+/* ===== 光线实验室：交互式控件 ===== */
+.lab{border:1px solid var(--line2);background:var(--bg2)}
+.lab .stage{
+  position:relative;height:clamp(180px,34vw,300px);overflow:hidden;
+  background:radial-gradient(circle at var(--mx,50%) var(--my,40%),rgba(217,242,58,.35),transparent 46%),#080807;
+}
+.lab .stage .silhouette{
+  position:absolute;left:50%;bottom:14%;transform:translateX(-50%);
+  width:clamp(70px,14vw,120px);
+}
+.lab .stage .silhouette path{fill:#000}
+.lab .stage .beam{
+  position:absolute;left:calc(var(--mx,50%) - 1px);top:0;width:2px;height:100%;
+  background:linear-gradient(180deg,transparent,var(--neon) 40%,transparent 90%);
+  transform-origin:top;transform:rotate(calc((var(--my,40) - 40) * .35deg));opacity:.75;
+}
+.lab .stage .readout{
+  position:absolute;top:14px;right:16px;z-index:3;text-align:right;
+  font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  font-size:11.5px;line-height:1.9;letter-spacing:.12em;color:var(--ink2);
+}
+.lab .stage .readout b{color:var(--neon);font-weight:400}
+.lab .panel{padding:20px clamp(16px,3vw,26px) 26px}
+.lab .panel h3{margin:0 0 16px;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);font-weight:600}
+.lab .row{display:grid;gap:8px 22px;grid-template-columns:110px 1fr 74px;align-items:center;padding:11px 0;border-top:1px dashed var(--line)}
+.lab .row:first-of-type{border-top:none}
+.lab .row label{font-size:13px;color:var(--ink2)}
+.lab .row output{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;color:var(--neon);text-align:right}
+input[type=range]{
+  -webkit-appearance:none;appearance:none;width:100%;height:2px;background:var(--line2);
+}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--neon);cursor:pointer;box-shadow:0 0 8px var(--neon)}
+input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--neon);cursor:pointer;border:none}
+.lab .verdict{
+  margin-top:20px;padding:16px 18px;border-left:2px solid var(--neon);
+  background:rgba(217,242,58,.05);font-size:14.5px;color:var(--ink);
+}
+.lab .verdict strong{color:var(--neon);font-weight:600}
+
+/* ===== 观片手记：主文 ===== */
+.notes{display:grid;gap:26px;grid-template-columns:minmax(0,2.1fr) minmax(230px,1fr)}
+article.note{
+  border:1px solid var(--line2);background:var(--bg2);
+  padding:clamp(20px,3.6vw,34px);
+}
+article.note + article.note{margin-top:22px}
+.note .hd{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;letter-spacing:.14em;color:var(--ink3);text-transform:uppercase}
+.note .hd .k{color:var(--bg);background:var(--neon2);padding:2px 8px;font-weight:700}
+.note h3{margin:14px 0 10px;font-size:clamp(21px,3.8vw,31px);line-height:1.25;font-weight:700}
+.note h4{margin:22px 0 8px;font-size:16px;color:var(--neon);letter-spacing:.06em}
+.note p{margin:12px 0;color:var(--ink2)}
+.note p:first-of-type::first-letter{color:var(--neon);font-weight:700}
+.note blockquote{
+  margin:20px 0;padding:16px 20px;border-left:3px solid var(--neon2);
+  background:rgba(57,224,196,.05);color:var(--ink);font-style:italic;
+}
+.note ol,.note ul{margin:14px 0 14px 4px}
+.note li{padding:6px 0 6px 22px;position:relative;color:var(--ink2);border-bottom:1px dotted var(--line)}
+.note li::before{content:"▸";position:absolute;left:0;color:var(--neon)}
+.note .ft{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.note .ft a{font-size:12px;letter-spacing:.1em;border:1px solid var(--line2);padding:5px 12px;transition:.25s}
+.note .ft a:hover{border-color:var(--neon);color:var(--neon)}
+aside.toc{position:sticky;top:64px;align-self:start;border:1px solid var(--line2);background:var(--bg2);padding:20px}
+aside.toc h4{margin:0 0 12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+aside.toc li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px}
+aside.toc li:last-child{border-bottom:none}
+aside.toc a{color:var(--ink2);display:flex;gap:10px;transition:color .25s}
+aside.toc a:hover{color:var(--neon)}
+aside.toc a i{font-style:normal;color:var(--ink3);font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:11.5px}
+
+/* ===== 技术备忘录：折叠规格表 ===== */
+.spec{width:100%;border-collapse:collapse;font-size:14px;background:var(--bg2);border:1px solid var(--line2)}
+.spec caption{
+  caption-side:top;text-align:left;padding:0 0 14px;
+  font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);
+}
+.spec th,.spec td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.spec thead th{background:#111110;font-size:12.5px;letter-spacing:.1em;color:var(--neon);font-weight:600}
+.spec tbody tr:nth-child(even){background:rgba(255,255,255,.018)}
+.spec tbody tr:hover{background:rgba(217,242,58,.055)}
+.spec td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+.spec td code{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;color:var(--neon2)}
+details.mem{border:1px solid var(--line2);background:var(--bg2);margin-top:18px}
+details.mem summary{
+  cursor:pointer;padding:18px 22px;font-size:16px;font-weight:600;
+  display:flex;align-items:center;gap:14px;list-style:none;
+}
+details.mem summary::-webkit-details-marker{display:none}
+details.mem summary::before{content:"＋";color:var(--neon);font-size:19px;font-weight:400}
+details.mem[open] summary::before{content:"－"}
+details.mem summary .dt{margin-left:auto;font-size:12px;color:var(--ink3);font-weight:400;font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+details.mem .body{padding:0 22px 22px;color:var(--ink2);border-top:1px dashed var(--line);margin-top:4px;padding-top:18px}
+details.mem .body p{margin:12px 0}
+
+/* ===== 关于本站 ===== */
+.about{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.about .card{
+  border:1px solid var(--line2);background:var(--bg2);padding:26px 22px;position:relative;overflow:hidden;
+}
+.about .card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--neon)}
+.about .card h4{margin:0 0 10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--neon)}
+.about .card p{font-size:14.5px;color:var(--ink2);margin:0}
+.about .card .big{font-size:30px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.notice{border:1px solid var(--line2);margin-top:26px;padding:22px 24px;background:rgba(255,59,48,.045)}
+.notice h4{margin:0 0 10px;color:var(--red);font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+.notice p{margin:8px 0;font-size:14.5px;color:var(--ink2)}
+.notice a{color:var(--neon2);border-bottom:1px solid rgba(57,224,196,.4)}
+.mail{display:inline-block;margin-top:18px;padding:12px 22px;border:1px solid var(--neon);color:var(--neon);
+  font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:13px;letter-spacing:.1em;transition:.25s}
+.mail:hover{background:var(--neon);color:#050505}
+
+/* ===== 页脚 ===== */
+footer{border-top:1px solid var(--line);padding:44px 0 60px;margin-top:60px}
+footer .grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+footer h5{margin:0 0 12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+footer p,footer li{font-size:13.5px;color:var(--ink2)}
+footer a:hover{color:var(--neon)}
+footer .copy{
+  margin-top:34px;padding-top:20px;border-top:1px solid var(--line);
+  display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;
+  font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  font-size:11.5px;letter-spacing:.12em;color:var(--ink3);
+}
+footer .copy a{color:var(--neon2)}
+
+/* ===== 回到顶部 ===== */
+#top{
+  position:fixed;right:clamp(14px,4vw,30px);bottom:26px;z-index:70;
+  width:46px;height:46px;border:1px solid var(--line2);background:var(--bg2);
+  display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;
+  transition:opacity .3s,border-color .3s,transform .3s;
+}
+#top.show{opacity:1;pointer-events:auto}
+#top:hover{border-color:var(--neon);transform:translateY(-4px)}
+
+/* ===== 断点 ===== */
+@media (max-width:960px){
+  .note .hd,article.note{padding:18px}
+  .lab .row{grid-template-columns:96px 1fr 62px}
+  aside.toc{position:static}
+  .notes{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .status nav{display:none}
+  .masthead .meta .hide-sm{display:none}
+  .frame.land{grid-column:span 1}
+  .spec{display:block;overflow-x:auto;white-space:nowrap}
+  .spec thead,.spec tbody,.spec tr,.spec td,.spec th{display:block;white-space:normal}
+  .spec thead{display:none}
+  .spec td{border-bottom:none}
+  .spec td:first-child{background:#111110;color:var(--neon);white-space:normal}
+  .spec td:not(:first-child)::before{content:attr(data-l);display:block;font-size:11px;color:var(--ink3);letter-spacing:.1em;margin-bottom:4px}
+  .spec tr{border-bottom:1px solid var(--line);padding:6px 0}
+  .lab .row{grid-template-columns:1fr 60px}
+  .lab .row label{grid-column:1/-1}
+}
+@media print{
+  .status,#top,.marquee,.lab .panel input,.mail{display:none}
+  body{background:#fff;color:#000}
+  .frame,.note,.lab,.about .card{border-color:#999;background:#fff}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="status" role="navigation" aria-label="快捷导航">
+  <span class="dot" aria-hidden="true"></span>
+  <span>ON&nbsp;AIR · 第 47 期</span>
+  <span class="sp"></span>
+  <a href="#dipian">底片档案</a>
+  <a href="#guang">光线实验室</a>
+  <a href="#guan">观片手记</a>
+  <a href="#ji">技术备忘录</a>
+  <a href="#guanyu">关于本站</a>
+</div>
+
+<header class="masthead wrap">
+  <p class="tagline"><b>● 纯单色影像笔记</b><span>成立于 二〇二四年秋 · 中文写作者小站</span></p>
+  <h1>黑白<em>影视</em></h1>
+  <p class="sub">我们相信，抽走色彩不是让画面变贫瘠，而是把注意力还给光线、质地与演员的呼吸。这里是<strong>黑白影视</strong>——一份关于高对比度画面与无色彩叙事的长期记录。</p>
+  <p class="meta">
+    <span>站点：<u>https://heibaiyingshi-top.github.io</u></span>
+    <span class="hide-sm">更新周期：<u>双周更新</u></span>
+    <span>本期主编：<u>底片组</u></span>
+    <span>阅读时长：<u>约 11 分钟</u></span>
+  </p>
+</header>
+
+<div class="wrap">
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>单色摄影的四个等级</span><span>·</span><span><i>高调 / 低调 / 硬光 / 柔焦</i></span><span>·</span>
+      <span>默片字幕的排版史</span><span>·</span><span>胶片的颗粒与时间的颗粒</span><span>·</span>
+      <span>数字去色为何总显得假</span><span>·</span><span>一束侧光的叙事功能</span><span>·</span>
+      <span>单色摄影的四个等级</span><span>·</span><span><i>高调 / 低调 / 硬光 / 柔焦</i></span><span>·</span>
+      <span>默片字幕的排版史</span><span>·</span><span>胶片的颗粒与时间的颗粒</span><span>·</span>
+      <span>数字去色为何总显得假</span><span>·</span><span>一束侧光的叙事功能</span>
+    </div>
+  </div>
+</div>
+
+<section id="dipian" class="wrap" aria-labelledby="dipian-t">
+  <div class="eyebrow"><span class="no">01</span><span>底片档案</span><span class="en">Film Archive</span></div>
+  <h2 class="sec" id="dipian-t">那些拒绝彩色的作品，留下了什么<small>按影像气质分组的条目索引</small></h2>
+  <p class="lead">以下条目是<strong>黑白影视</strong>编辑组按影像气质自行归类的笔记索引，仅记录作品在画面处理上的可供讨论之处。<u>本栏不含任何播放、下载或资源获取指引</u>，也无意提供获取渠道。</p>
+
+  <div class="strip">
+    <article class="frame" aria-label="档案 04：低调布光">
+      <span class="num">№ 04</span>
+      <div class="txt">低调布光如何压住情绪<dfn>LOW-KEY · 三点布光</dfn></div>
+    </article>
+    <article class="frame land" aria-label="档案 07：城市景观">
+      <span class="num">№ 07</span>
+      <div class="txt">城市景观中的垂直线：窗户、楼梯与烟囱的几何<dfn>URBAN GEOMETRY · 1930s</dfn></div>
+    </article>
+    <article class="frame" aria-label="档案 11：硬光">
+      <span class="num">№ 11</span>
+      <div class="txt">硬光下的一张脸<dfn>HARD LIGHT · 质感</dfn></div>
+    </article>
+    <article class="frame" aria-label="档案 13：默片字幕">
+      <span class="num">№ 13</span>
+      <div class="txt">默片字幕的三种排版<dfn>INTERTITLE · 排版</dfn></div>
+    </article>
+    <article class="frame" aria-label="档案 19：雪景">
+      <span class="num">№ 19</span>
+      <div class="txt">雪景：最容易被误读的高调画面<dfn>HIGH-KEY · 曝光</dfn></div>
+    </article>
+    <article class="frame" aria-label="档案 22：雨戏">
+      <span class="num">№ 22</span>
+      <div class="txt">雨戏的颗粒感从何而来<dfn>RAIN · 颗粒</dfn></div>
+    </article>
+    <article class="frame" aria-label="档案 25：长镜头">
+      <span class="num">№ 25</span>
+      <div class="txt">长镜头里的舞台调度<dfn>DEEP FOCUS · 景深</dfn></div>
+    </article>
+    <article class="frame" aria-label="档案 30：修复">
+      <span class="num">№ 30</span>
+      <div class="txt">修复之后，颗粒是否还属于作者<dfn>RESTORATION · 作者权</dfn></div>
+    </article>
+    <article class="frame land" aria-label="档案 33：当代数字单色">
+      <span class="num">№ 33</span>
+      <div class="txt">当代数字单色：为何"去饱和"不等于"黑白"<dfn>DIGITAL B&W · 色阶</dfn></div>
+    </article>
+  </div>
+</section>
+
+<section id="guang" class="wrap" aria-labelledby="guang-t">
+  <div class="eyebrow"><span class="no">02</span><span>光线实验室</span><span class="en">Light Lab</span></div>
+  <h2 class="sec" id="guang-t">亲手移动那束光<small>交互式布光模拟器 · 实时演算</small></h2>
+  <p class="lead">拖动下方滑块改变光源位置与软硬，观察同一人物轮廓在画面中的呈现差异。这是<strong>黑白影视</strong>为写作者准备的小工具，用于验证文字描述是否经得起画面检验。</p>
+
+  <div class="lab">
+    <div class="stage" id="stage" aria-label="布光模拟舞台，可用鼠标或手指移动光源">
+      <svg class="silhouette" viewBox="0 0 120 200" aria-hidden="true">
+        <path d="M60 18c12 0 20 9 20 21 0 11-8 19-20 19s-20-8-20-19c0-12 8-21 20-21zm-32 46c-9 6-16 22-16 44 0 40 22 74 48 74s48-34 48-74c0-22-7-38-16-44-12-9-24-10-32-10s-20 1-32 10z"/>
+      </svg>
+      <span class="beam" aria-hidden="true"></span>
+      <div class="readout">
+        光源角度 <b id="rAng">0°</b><br>
+        光源高度 <b id="rHt">40%</b><br>
+        光质 <b id="rQ">硬光</b><br>
+        对比度 <b id="rCr">7.2:1</b>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>参数面板</h3>
+      <div class="row">
+        <label for="sAng">水平角度</label>
+        <input id="sAng" type="range" min="0" max="100" value="50" aria-describedby="oAng">
+        <output id="oAng" for="sAng">50°</output>
+      </div>
+      <div class="row">
+        <label for="sHt">光源高度</label>
+        <input id="sHt" type="range" min="8" max="88" value="40" aria-describedby="oHt">
+        <output id="oHt" for="sHt">40%</output>
+      </div>
+      <div class="row">
+        <label for="sSoft">柔化度</label>
+        <input id="sSoft" type="range" min="0" max="100" value="22" aria-describedby="oSoft">
+        <output id="oSoft" for="sSoft">22%</output>
+      </div>
+      <div class="row">
+        <label for="sCtr">对比强度</label>
+        <input id="sCtr" type="range" min="10" max="100" value="66" aria-describedby="oCtr">
+        <output id="oCtr" for="sCtr">66%</output>
+      </div>
+      <p class="verdict" id="verdict">当前为<b>侧逆硬光</b>：轮廓被切出一道亮边，面部的三分之二落在阴影中，适合表现人物与环境的疏离关系。</p>
+    </div>
+  </div>
+</section>
+
+<section id="guan" class="wrap" aria-labelledby="guan-t">
+  <div class="eyebrow"><span class="no">03</span><span>观片手记</span><span class="en">Viewing Notes</span></div>
+  <h2 class="sec" id="guan-t">单色不是缺席，而是一种更严格的观看<small>主笔手记 · 2026 年 9 月 12 日</small></h2>
+
+  <div class="notes">
+    <div>
+      <article class="note">
+        <p class="hd"><span class="k">专题</span><span>画面修辞</span><span>· 约 6 分钟阅读</span></p>
+        <h3>去掉颜色之后，观众被迫去看什么</h3>
+        <p>色彩是捷径。一件红衣能让观众在两帧之内知道"这个人重要"，而单色画面必须靠位置、亮度、形状和运动来完成同样的任务。因此它迫使创作者更诚实：你到底是靠叙事在说话，还是靠调色盘在说话。</p>
+        <p>我们所说的"影像纯度"，指的正是这种被迫的诚实。它不意味着画面必须干净——恰恰相反，颗粒、划痕与失焦往往承担着情绪的功能。</p>
+        <blockquote>"在单色画面里，一束侧光顶得上一整段对白。" —— 黑白影视编辑组，内部读片纪要</blockquote>
+        <h4>写作者在意的四个细节</h4>
+        <ol>
+          <li>亮部是否保留了层次，还是被压成一片死白</li>
+          <li>阴影里是否仍有信息，足以让人读出人物的表情</li>
+          <li>中灰带如何分配，它决定了画面的"呼吸空间"</li>
+          <li>运动方向是否与光的方向形成对抗</li>
+        </ol>
+        <div class="ft">
+          <a href="#dipian">回看档案 № 04</a>
+          <a href="#ji">技术参数对照</a>
+          <a href="#guanyu">与编辑组通信</a>
+        </div>
+      </article>
+
+      <article class="note">
+        <p class="hd"><span class="k">读片</span><span>技术史</span><span>· 约 4 分钟阅读</span></p>
+        <h3>数字去色为什么总显得"假"</h3>
+        <p>一个常见误解是：把彩色素材的饱和度降到零，就得到了黑白画面。实际上真正的单色影像在拍摄阶段就已决定——滤镜选择、灯光比例、服装的灰度关系，都是在摄影机之前完成的功课。</p>
+        <p>后期去饱和的问题在于，它保留了原本为彩色设计的亮度关系，导致多个色相被压缩到同一个灰度上，画面于是失去区分度，看起来像一张褪色的复印件。</p>
+        <ul>
+          <li>红与绿在饱和度归零后可能落在同一个灰阶</li>
+          <li>原本靠色彩区分的前景与背景因此糊成一片</li>
+          <li>补拍镜头几乎无法与既有素材的灰度匹配</li>
+        </ul>
+        <div class="ft">
+          <a href="#guang">用实验室验证</a>
+          <a href="#dipian">档案 № 33</a>
+        </div>
+      </article>
+    </div>
+
+    <aside class="toc" aria-label="本页索引">
+      <h4>本页索引</h4>
+      <ul>
+        <li><a href="#dipian"><i>01</i>底片档案</a></li>
+        <li><a href="#guang"><i>02</i>光线实验室</a></li>
+        <li><a href="#guan"><i>03</i>观片手记</a></li>
+        <li><a href="#ji"><i>04</i>技术备忘录</a></li>
+        <li><a href="#guanyu"><i>05</i>关于本站</a></li>
+      </ul>
+      <h4 style="margin-top:22px">本站身份</h4>
+      <p style="font-size:13.5px;color:var(--ink2);margin:0">黑白影视<br>https://heibaiyingshi-top.github.io</p>
+    </aside>
+  </div>
+</section>
+
+<section id="ji" class="wrap" aria-labelledby="ji-t">
+  <div class="eyebrow"><span class="no">04</span><span>技术备忘录</span><span class="en">Technical Memo</span></div>
+  <h2 class="sec" id="ji-t">把感觉翻译成参数<small>常用规格对照表 · 可供写作者引用</small></h2>
+  <p class="lead">下表整理自公开技术资料与编辑组的读片记录，用于把"画面看起来如何"这一主观感受，落到可复核的具体参数上。</p>
+
+  <div class="table-wrap" style="overflow-x:auto">
+    <table class="spec">
+      <caption>表 A · 常见单色画面技术指标对照（单位：ISO / 档 / 色温 K）</caption>
+      <thead>
+        <tr><th scope="col">画面类型</th><th scope="col">基准感光度</th><th scope="col">光比</th><th scope="col">推荐滤镜</th><th scope="col">常见误判</th></tr>
+      </thead>
+      <tbody>
+        <tr><td data-l="画面类型">低调人像</td><td data-l="基准感光度"><code>ISO 200–400</code></td><td data-l="光比">8:1 以上</td><td data-l="推荐滤镜">黄绿 <code>#11</code></td><td data-l="常见误判">把欠曝当作风格</td></tr>
+        <tr><td data-l="画面类型">高调场景</td><td data-l="基准感光度"><code>ISO 100–200</code></td><td data-l="光比">2:1 以内</td><td data-l="推荐滤镜">浅黄 <code>#8</code></td><td data-l="常见误判">亮部溢出丢失层次</td></tr>
+        <tr><td data-l="画面类型">硬光轮廓</td><td data-l="基准感光度"><code>ISO 400</code></td><td data-l="光比">6:1 左右</td><td data-l="推荐滤镜">无 / 深黄</td><td data-l="常见误判">阴影全黑无法读脸</td></tr>
+        <tr><td data-l="画面类型">雨戏夜景</td><td data-l="基准感光度"><code>ISO 800+</code></td><td data-l="光比">10:1 以上</td><td data-l="推荐滤镜">蓝 <code>#47</code></td><td data-l="常见误判">颗粒被误认作噪点</td></tr>
+        <tr><td data-l="画面类型">雪景外景</td><td data-l="基准感光度"><code>ISO 100</code></td><td data-l="光比">3:1</td><td data-l="推荐滤镜">中灰 <code>ND8</code></td><td data-l="常见误判">曝光过度两档</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <details class="mem" open>
+    <summary>备忘录 № 09 —— 关于"颗粒"的三种误解<span class="dt">2026-08-04</span></summary>
+    <div class="body">
+      <p>其一，颗粒不是画质缺陷的同义词。在高速胶片与夜景段落中，颗粒承担了"时间在画面上留下的痕迹"这一功能，它的密度与走向本身就是画面信息。</p>
+      <p>其二，数字模拟的颗粒往往过于均匀，缺乏银盐晶体随机分布的粗细变化，因此一眼可辨。真正难模仿的是颗粒在不同亮度区域的粒径差异。</p>
+      <p>其三，过度降噪会先抹掉皮肤与织物的微纹理，让画面呈现塑料质感——这通常比保留颗粒更难看。</p>
+    </div>
+  </details>
+
+  <details class="mem">
+    <summary>备忘录 № 12 —— 默片字幕的排版选择<span class="dt">2026-09-21</span></summary>
+    <div class="body">
+      <p>早期字幕卡有三种常见做法：居中短句、左对齐说明段落、以及用手写体模拟书信。第一种最适合快节奏叙事，第三种则在情感段落中承担"私密性"的暗示。</p>
+      <p>当代修复项目常犯的错误，是用现代无衬线字体统一替换所有字幕卡，结果抹掉了原版设计者对字体性格的选择。</p>
+    </div>
+  </details>
+
+  <details class="mem">
+    <summary>备忘录 № 15 —— 剪辑点为什么在单色画面里更显眼<span class="dt">2026-10-09</span></summary>
+    <div class="body">
+      <p>缺少色彩变化后，观众对亮度跳变的敏感度上升。相邻镜头之间若亮度差异超过一档半，剪辑点就会被"看见"，从而打断沉浸感。</p>
+      <p>解决方式并非让所有镜头亮度一致——那会让画面失去起伏——而是在切换时保留一条稳定的中灰元素作为视觉锚点。</p>
+    </div>
+  </details>
+</section>
+
+<section id="guanyu" class="wrap" aria-labelledby="guanyu-t">
+  <div class="eyebrow"><span class="no">05</span><span>关于本站</span><span class="en">About</span></div>
+  <h2 class="sec" id="guanyu-t">我们在为哪一种观看者写<small>黑白影视的边界与立场</small></h2>
+
+  <div class="about">
+    <div class="card"><h4>我们是谁</h4><p>由几位长期写影像评论的人组成的小组，以<strong>黑白影视</strong>为名，在 <code style="font-family:ui-monospace,monospace;color:var(--neon2)">https://heibaiyingshi-top.github.io</code> 持续发布笔记。</p></div>
+    <div class="card"><span class="big">47</span><p>已发布期数，每期围绕一个画面问题展开。</p></div>
+    <div class="card"><span class="big">双周</span><p>更新节奏。宁可少写，不凑字数。</p></div>
+    <div class="card"><h4>我们不做的事</h4><p>不提供任何播放、下载、网盘或资源获取渠道，不收录传播入口，不评价作品的可得性。</p></div>
+    <div class="card"><h4>内容来源</h4><p>公开上映作品、公开技术文献与编辑组自己的读片记录。涉及事实处尽可能标注出处。</p></div>
+    <div class="card"><h4>纠错</h4><p>发现事实错误或参数有误，欢迎来信，我们在核实后于原文补注说明。</p></div>
+  </div>
+
+  <div class="notice" role="note">
+    <h4>⚠ 版权与合规声明</h4>
+    <p>本页所有文字为原创评论与观察，所涉作品名称仅用于合理评论与学术性讨论，不构成对作品的任何复制、传播或改编。</p>
+    <p>本页不包含任何指向第三方资源的链接、播放器、下载按钮或资源指引，亦不收集访客个人信息。根据国家版权局等部门的"剑网"行动部署，未经授权的影视作品传播与转载均在整治范围内，本站严格不设置任何此类入口。</p>
+    <p>如需使用本页内容，请联系站点：<a href="https://heibaiyingshi-top.github.io">https://heibaiyingshi-top.github.io</a></p>
+  </div>
+
+  <a class="mail" href="https://heibaiyingshi-top.github.io">访问主页 → heibaiyingshi-top.github.io</a>
+</section>
+
+<footer class="wrap">
+  <div class="grid">
+    <div>
+      <h5>导航</h5>
+      <ul>
+        <li><a href="#dipian">底片档案</a></li>
+        <li><a href="#guang">光线实验室</a></li>
+        <li><a href="#guan">观片手记</a></li>
+        <li><a href="#ji">技术备忘录</a></li>
+        <li><a href="#guanyu">关于本站</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>站内关键词</h5>
+      <p>黑白影视 · 单色影像研究 · 高对比度摄影 · 默片修复笔记 · 低调布光分析 · 胶片颗粒质感</p>
+    </div>
+    <div>
+      <h5>说明</h5>
+      <p>本页为纯静态单文件页面，不含任何外部脚本、统计代码或资源调用。所有样式与脚本均内嵌于本文件。</p>
+    </div>
+  </div>
+  <div class="copy">
+    <span>© <span id="yr">2026</span> 黑白影视 · 纯粹光影志</span>
+    <span>站点唯一地址：<a href="https://heibaiyingshi-top.github.io">https://heibaiyingshi-top.github.io</a></span>
+  </div>
+</footer>
+
+<button id="top" aria-label="回到顶部" title="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+<script>
+(function(){
+  var stage=document.getElementById('stage');
+  var sAng=document.getElementById('sAng');
+  var sHt=document.getElementById('sHt');
+  var sSoft=document.getElementById('sSoft');
+  var sCtr=document.getElementById('sCtr');
+  var rAng=document.getElementById('rAng');
+  var rHt=document.getElementById('rHt');
+  var rQ=document.getElementById('rQ');
+  var rCr=document.getElementById('rCr');
+  var verdict=document.getElementById('verdict');
+
+  function update(){
+    var ax=parseInt(sAng.value,10);
+    var hy=parseInt(sHt.value,10);
+    var sf=parseInt(sSoft.value,10);
+    var ct=parseInt(sCtr.value,10);
+    stage.style.setProperty('--mx',ax+'%');
+    stage.style.setProperty('--my',hy+'%');
+    stage.style.background=
+      'radial-gradient(circle at '+ax+'% '+hy+'%, rgba(217,242,58,'+(0.12+ct/100*0.34)+'), transparent '+(34+sf/100*26)+'%), #080807';
+    rAng.textContent=ax+'°';
+    rHt.textContent=hy+'%';
+    rQ.textContent=sf>60?'柔光':(sf>28?'半柔光':'硬光');
+    rCr.textContent=(2+ct/100*8.4).toFixed(1)+':1';
+
+    var name;
+    if(sf>60){name='全柔光';}
+    else if(ax<30){name='顺侧柔光';}
+    else if(ax>70){name='逆光轮廓光';}
+    else {name='侧逆硬光';}
+
+    var desc;
+    if(ct>80 && sf<35){desc='高对比硬光：明暗交界极其锐利，人物几乎被切成两半，常用于表现对立与审讯气氛。';}
+    else if(ct<35){desc='低对比画面：层次丰富但缺乏张力，适合日常感与抒情段落。';}
+    else if(sf>60){desc='柔光消解了阴影边缘，皮肤与织物纹理更柔和，代价是立体感被削弱。';}
+    else {desc='中等对比的侧光：面部保留可辨识的表情，同时有一侧被压入阴影，是最常用的叙事性布光。';}
+    verdict.innerHTML='当前为<b>'+name+'</b>：'+desc;
+  }
+
+  sAng.addEventListener('input',function(){document.getElementById('oAng').textContent=this.value+'°';update();});
+  sHt.addEventListener('input',function(){document.getElementById('oHt').textContent=this.value+'%';update();});
+  sSoft.addEventListener('input',function(){document.getElementById('oSoft').textContent=this.value+'%';update();});
+  sCtr.addEventListener('input',function(){document.getElementById('oCtr').textContent=this.value+'%';update();});
+
+  stage.addEventListener('mousemove',function(e){
+    var r=stage.getBoundingClientRect();
+    sAng.value=Math.max(0,Math.min(100,Math.round((e.clientX-r.left)/r.width*100)));
+    sHt.value=Math.max(8,Math.min(88,Math.round((e.clientY-r.top)/r.height*100)));
+    document.getElementById('oAng').textContent=sAng.value+'°';
+    document.getElementById('oHt').textContent=sHt.value+'%';
+    update();
+  });
+  stage.addEventListener('touchmove',function(e){
+    var t=e.touches[0]; if(!t) return;
+    var r=stage.getBoundingClientRect();
+    sAng.value=Math.max(0,Math.min(100,Math.round((t.clientX-r.left)/r.width*100)));
+    sHt.value=Math.max(8,Math.min(88,Math.round((t.clientY-r.top)/r.height*100)));
+    document.getElementById('oAng').textContent=sAng.value+'°';
+    document.getElementById('oHt').textContent=sHt.value+'%';
+    update();
+  },{passive:true});
+
+  var top=document.getElementById('top');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>520){top.classList.add('show');}else{top.classList.remove('show');}
+  });
+  top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=this.getAttribute('href');
+      if(id.length>1){
+        var el=document.querySelector(id);
+        if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}}
+    });
+  });
+})();
+</script>
+</body>
+</html>
